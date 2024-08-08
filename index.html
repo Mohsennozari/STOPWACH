@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STOPWATCH</title>
-    <link rel="stylesheet" href="stayle.css">
+    <link rel="stylesheet" href="style.css"> <!-- لینک به فایل CSS -->
 </head>
 <body>
     <div class="stopwatch">
-        <h1>00:00:00</h1>
+        <h1 id="displayTime">00:00:00</h1> <!-- افزودن id به h1 برای نمایش زمان -->
         <div class="buttons">
-            <img src="IMG/stop-solid (5).svg">
-            <img src="IMG/play-solid.svg">
-            <img src="IMG/rotate-right-solid.svg">
+            <img src="IMG/stop-solid.svg" onclick="watchstop()"> <!-- لینک به تابع توقف -->
+            <img src="IMG/play-solid.svg" onclick="watchstart()"> <!-- لینک به تابع شروع -->
+            <img src="IMG/rotate-right-solid.svg" onclick="watchReset()"> <!-- لینک به تابع ریست -->
         </div>
     </div>
+    <script src="script.js"></script> <!-- لینک به فایل جاوااسکریپت -->
 </body>
 </html>
