@@ -5,7 +5,7 @@ let particlesArray = [];
 const mouse = {
     x: null,
     y: null,
-    radius: 150
+    radius: 100
 };
 
 window.addEventListener('mousemove', (event) => {
@@ -67,14 +67,14 @@ class Particle {
 
 function init() {
     particlesArray = [];
-    const numberOfParticles = (canvas.height * canvas.width) / 9000;
+    const numberOfParticles = (canvas.height * canvas.width) / 500;
     for (let i = 0; i < numberOfParticles * 2; i++) {
-        const size = (Math.random() * 5) + 1;
+        const size = (Math.random() * 2) + 1;
         const x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         const y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-        const directionX = (Math.random() * 5) - 2.5;
-        const directionY = (Math.random() * 5) - 2.5;
-        const color = '#8C5523';
+        const directionX = (Math.random() * 1) - 2.5;
+        const directionY = (Math.random() * 20) - 2.5;
+        const color = '#369';
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
     }
