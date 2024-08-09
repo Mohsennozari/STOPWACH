@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STOPWATCH</title>
-    <link rel="stylesheet" href="style.css"> <!-- لینک به فایل CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <canvas id="backgroundCanvas"></canvas>
     <div class="stopwatch">
-        <h1 id="displayTime">00:00:00</h1> <!-- افزودن id به h1 برای نمایش زمان -->
+        <h1 id="displayTime">00:00:00</h1>
         <div class="buttons">
-            <img src="IMG/stop-solid.svg" onclick="watchstop()"> <!-- لینک به تابع توقف -->
-            <img src="IMG/play-solid.svg" onclick="watchstart()"> <!-- لینک به تابع شروع -->
-            <img src="IMG/rotate-right-solid.svg" onclick="watchReset()"> <!-- لینک به تابع ریست -->
+            <img src="IMG/stop-solid (5).svg" alt="Stop" onclick="watchstop()">
+            <img src="IMG/play-solid.svg" alt="Start" onclick="watchstart()">
+            <img src="IMG/rotate-right-solid.svg" alt="Reset" onclick="watchReset()">
         </div>
     </div>
-    <script src="script.js"></script> <!-- لینک به فایل جاوااسکریپت -->
+    <script src="script.js"></script>
+    <script src="background.js"></script>
 </body>
 </html>
